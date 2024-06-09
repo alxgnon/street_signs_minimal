@@ -1,4 +1,5 @@
 -- Class D signs
+local S = street_signs.S
 local has_screwdriver_mod = minetest.get_modpath("screwdriver")
 
 local sgroups = table.copy(signs_lib.standard_steel_groups)
@@ -36,7 +37,7 @@ local function disable_apn()
 end
 
 signs_lib.register_sign("street_signs:sign_basic", {
-	description = "D3-1a: Generic intersection street name sign",
+	description = S("D3-1a: Generic intersection street name sign"),
 	paramtype2 = "facedir",
 	selection_box = cbox,
 	mesh = "street_signs_basic.obj",
@@ -73,7 +74,7 @@ cbox = {
 }
 
 signs_lib.register_sign("street_signs:sign_basic_top_only", {
-	description = "D3-1a: Generic intersection street name sign (top only)",
+	description = S("D3-1a: Generic intersection street name sign (top only)"),
 	paramtype2 = "facedir",
 	selection_box = cbox,
 	mesh = "street_signs_basic_top_only.obj",
@@ -101,7 +102,7 @@ signs_lib.register_sign("street_signs:sign_basic_top_only", {
 cbox = signs_lib.make_selection_boxes(24, 24)
 
 signs_lib.register_sign("street_signs:sign_service_hospital", {
-	description = "D9-2: General service: hospital",
+	description = S("D9-2: General service: hospital"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x24_wall.obj",
 	tiles = { "street_signs_service_hospital.png",
@@ -115,7 +116,7 @@ signs_lib.register_sign("street_signs:sign_service_hospital", {
 })
 
 signs_lib.register_sign("street_signs:sign_service_handicapped", {
-	description = "D9-6: General service: handicapped",
+	description = S("D9-6: General service: handicapped"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x24_wall.obj",
 	tiles = { "street_signs_service_handicapped.png",
@@ -129,7 +130,7 @@ signs_lib.register_sign("street_signs:sign_service_handicapped", {
 })
 
 signs_lib.register_sign("street_signs:sign_service_fuel", {
-	description = "D9-7: General service: fuel/gas",
+	description = S("D9-7: General service: fuel/gas"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x24_wall.obj",
 	tiles = { "street_signs_service_fuel.png",
@@ -143,7 +144,7 @@ signs_lib.register_sign("street_signs:sign_service_fuel", {
 })
 
 signs_lib.register_sign("street_signs:sign_service_food", {
-	description = "D9-8: General service: food",
+	description = S("D9-8: General service: food"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x24_wall.obj",
 	tiles = { "street_signs_service_food.png",
@@ -157,7 +158,7 @@ signs_lib.register_sign("street_signs:sign_service_food", {
 })
 
 signs_lib.register_sign("street_signs:sign_service_lodging", {
-	description = "D9-9: General service: lodging",
+	description = S("D9-9: General service: lodging"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x24_wall.obj",
 	tiles = { "street_signs_service_lodging.png",
@@ -171,7 +172,7 @@ signs_lib.register_sign("street_signs:sign_service_lodging", {
 })
 
 signs_lib.register_sign("street_signs:sign_service_ev_charging", {
-	description = "D9-11b: General service: EV charging",
+	description = S("D9-11b: General service: EV charging"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x24_wall.obj",
 	tiles = { "street_signs_service_ev_charging.png",

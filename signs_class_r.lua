@@ -1,9 +1,9 @@
 -- Class-R signs
-
+local S = street_signs.S
 local cbox = signs_lib.make_selection_boxes(36, 36)
 
 signs_lib.register_sign("street_signs:sign_stop", {
-	description = "R1-1: Stop sign",
+	description = S("R1-1: Stop sign"),
 	selection_box = cbox,
 	mesh = "street_signs_stop_wall.obj",
 	tiles = {
@@ -20,7 +20,7 @@ signs_lib.register_sign("street_signs:sign_stop", {
 cbox = signs_lib.make_selection_boxes(36, 43.1, nil, 0, -3.55, 0)
 
 signs_lib.register_sign("street_signs:sign_stop_all_way", {
-	description = "R1-1 + R1-3P: Stop sign with \"all way\" plaque",
+	description = S("R1-1 + R1-3P: Stop sign with \"all way\" plaque"),
 	selection_box = cbox,
 	mesh = "street_signs_stop_all_way_wall.obj",
 	tiles = {
@@ -37,7 +37,7 @@ signs_lib.register_sign("street_signs:sign_stop_all_way", {
 cbox = signs_lib.make_selection_boxes(48, 48)
 
 signs_lib.register_sign("street_signs:sign_yield", {
-	description = "R1-2: Yield sign",
+	description = S("R1-2: Yield sign"),
 	selection_box = cbox,
 	mesh = "street_signs_yield_wall.obj",
 	tiles = {
@@ -54,7 +54,7 @@ signs_lib.register_sign("street_signs:sign_yield", {
 cbox = signs_lib.make_selection_boxes(30, 36)
 
 signs_lib.register_sign("street_signs:sign_speed_limit", {
-	description = "R2-1: Generic speed limit sign",
+	description = S("R2-1: Generic speed limit sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -84,7 +84,7 @@ signs_lib.register_sign("street_signs:sign_speed_limit", {
 cbox = signs_lib.make_selection_boxes(36, 36)
 
 signs_lib.register_sign("street_signs:sign_no_right_turn", {
-	description = "R3-1: No right turn",
+	description = S("R3-1: No right turn"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -99,7 +99,7 @@ signs_lib.register_sign("street_signs:sign_no_right_turn", {
 })
 
 signs_lib.register_sign("street_signs:sign_no_left_turn", {
-	description = "R3-2: No left turn",
+	description = S("R3-2: No left turn"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -114,7 +114,7 @@ signs_lib.register_sign("street_signs:sign_no_left_turn", {
 })
 
 signs_lib.register_sign("street_signs:sign_no_u_turn", {
-	description = "R3-4: No U-turn",
+	description = S("R3-4: No U-turn"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -129,7 +129,7 @@ signs_lib.register_sign("street_signs:sign_no_u_turn", {
 })
 
 signs_lib.register_sign("street_signs:sign_u_turn_here", {
-	description = "U-turn here",
+	description = S("U-turn here"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -146,7 +146,7 @@ signs_lib.register_sign("street_signs:sign_u_turn_here", {
 cbox = signs_lib.make_selection_boxes(30, 36)
 
 signs_lib.register_sign("street_signs:sign_left_turn_only", {
-	description = "R3-5: Left turn only",
+	description = S("R3-5: Left turn only"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -161,7 +161,7 @@ signs_lib.register_sign("street_signs:sign_left_turn_only", {
 })
 
 signs_lib.register_sign("street_signs:sign_right_turn_only", {
-	description = "R3-5: Right turn only",
+	description = S("R3-5: Right turn only"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -176,7 +176,7 @@ signs_lib.register_sign("street_signs:sign_right_turn_only", {
 })
 
 signs_lib.register_sign("street_signs:sign_straight_through_only", {
-	description = "R3-5a: Straight through only",
+	description = S("R3-5a: Straight through only"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -191,7 +191,7 @@ signs_lib.register_sign("street_signs:sign_straight_through_only", {
 })
 
 signs_lib.register_sign("street_signs:sign_left_turn_or_straight", {
-	description = "R3-6: Left turn or straight through",
+	description = S("R3-6: Left turn or straight through"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -206,7 +206,7 @@ signs_lib.register_sign("street_signs:sign_left_turn_or_straight", {
 })
 
 signs_lib.register_sign("street_signs:sign_right_turn_or_straight", {
-	description = "R3-6: Right turn or straight through",
+	description = S("R3-6: Right turn or straight through"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -223,7 +223,7 @@ signs_lib.register_sign("street_signs:sign_right_turn_or_straight", {
 cbox = signs_lib.make_selection_boxes(36, 36)
 
 signs_lib.register_sign("street_signs:sign_left_lane_must_turn_left", {
-	description = "R3-7: Left lane must turn left",
+	description = S("R3-7: Left lane must turn left"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -238,7 +238,7 @@ signs_lib.register_sign("street_signs:sign_left_lane_must_turn_left", {
 })
 
 signs_lib.register_sign("street_signs:sign_right_lane_must_turn_right", {
-	description = "R3-7: Right lane must turn right",
+	description = S("R3-7: Right lane must turn right"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -253,7 +253,7 @@ signs_lib.register_sign("street_signs:sign_right_lane_must_turn_right", {
 })
 
 signs_lib.register_sign("street_signs:sign_no_straight_through", {
-	description = "R3-27: No straight through",
+	description = S("R3-27: No straight through"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -270,7 +270,7 @@ signs_lib.register_sign("street_signs:sign_no_straight_through", {
 cbox = signs_lib.make_selection_boxes(36, 48)
 
 signs_lib.register_sign("street_signs:sign_keep_right", {
-	description = "R4-7: Keep right sign",
+	description = S("R4-7: Keep right sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x48_wall.obj",
 	tiles = {
@@ -285,7 +285,7 @@ signs_lib.register_sign("street_signs:sign_keep_right", {
 })
 
 signs_lib.register_sign("street_signs:sign_keep_left", {
-	description = "R4-8: Keep left sign",
+	description = S("R4-8: Keep left sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x48_wall.obj",
 	tiles = {
@@ -302,7 +302,7 @@ signs_lib.register_sign("street_signs:sign_keep_left", {
 cbox = signs_lib.make_selection_boxes(36, 36)
 
 signs_lib.register_sign("street_signs:sign_do_not_enter", {
-	description = "R5-1: Do not enter sign",
+	description = S("R5-1: Do not enter sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -319,7 +319,7 @@ signs_lib.register_sign("street_signs:sign_do_not_enter", {
 cbox = signs_lib.make_selection_boxes(42, 30)
 
 signs_lib.register_sign("street_signs:sign_wrong_way", {
-	description = "R5-1a: Wrong way sign",
+	description = S("R5-1a: Wrong way sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_42x30_wall.obj",
 	tiles = {
@@ -336,7 +336,7 @@ signs_lib.register_sign("street_signs:sign_wrong_way", {
 cbox = signs_lib.make_selection_boxes(54, 18)
 
 signs_lib.register_sign("street_signs:sign_one_way_left", {
-	description = "R6-1: One way (left)",
+	description = S("R6-1: One way (left)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_54x18_wall.obj",
 	tiles = {
@@ -351,7 +351,7 @@ signs_lib.register_sign("street_signs:sign_one_way_left", {
 })
 
 signs_lib.register_sign("street_signs:sign_one_way_right", {
-	description = "R6-1: One way (right)",
+	description = S("R6-1: One way (right)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_54x18_wall.obj",
 	tiles = {
@@ -368,7 +368,7 @@ signs_lib.register_sign("street_signs:sign_one_way_right", {
 cbox = signs_lib.make_selection_boxes(30, 24)
 
 signs_lib.register_sign("street_signs:sign_divided_highway_with_cross_road", {
-	description = "R6-3: divided highway with cross road",
+	description = S("R6-3: divided highway with cross road"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x24_wall.obj",
 	tiles = {
@@ -385,7 +385,7 @@ signs_lib.register_sign("street_signs:sign_divided_highway_with_cross_road", {
 cbox = signs_lib.make_selection_boxes(60, 24)
 
 signs_lib.register_sign("street_signs:sign_roundabout_directional", {
-	description = "R6-4b: Roundabout direction (4 chevrons)",
+	description = S("R6-4b: Roundabout direction (4 chevrons)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_60x24_wall.obj",
 	tiles = {
@@ -400,7 +400,7 @@ signs_lib.register_sign("street_signs:sign_roundabout_directional", {
 })
 
 signs_lib.register_sign("street_signs:sign_roundabout_directional_left", {
-	description = "R6-4b: Roundabout direction (4 chevrons, pointing left)",
+	description = S("R6-4b: Roundabout direction (4 chevrons, pointing left)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_60x24_wall.obj",
 	tiles = {
@@ -417,7 +417,7 @@ signs_lib.register_sign("street_signs:sign_roundabout_directional_left", {
 cbox = signs_lib.make_selection_boxes(30, 30)
 
 signs_lib.register_sign("street_signs:sign_roundabout_counter_clockwise", {
-	description = "R6-5P: Roundabout plaque (to the left/counter-clockwise)",
+	description = S("R6-5P: Roundabout plaque (to the left/counter-clockwise)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x30_wall.obj",
 	tiles = {
@@ -432,7 +432,7 @@ signs_lib.register_sign("street_signs:sign_roundabout_counter_clockwise", {
 })
 
 signs_lib.register_sign("street_signs:sign_roundabout_clockwise", {
-	description = "R6-5P: Roundabout plaque (to the right/clockwise)",
+	description = S("R6-5P: Roundabout plaque (to the right/clockwise)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x30_wall.obj",
 	tiles = {
@@ -449,7 +449,7 @@ signs_lib.register_sign("street_signs:sign_roundabout_clockwise", {
 cbox = signs_lib.make_selection_boxes(24, 30)
 
 signs_lib.register_sign("street_signs:sign_do_not_stop_on_tracks", {
-	description = "R8-8: Do not stop on tracks",
+	description = S("R8-8: Do not stop on tracks"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x30_wall.obj",
 	tiles = {
@@ -466,7 +466,7 @@ signs_lib.register_sign("street_signs:sign_do_not_stop_on_tracks", {
 cbox = signs_lib.make_selection_boxes(9, 15, nil, 0, 0, -1.25)
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3a", {
-	description = "R10-3a: Pedestrians, push button to cross (pointing left)",
+	description = S("R10-3a: Pedestrians, push button to cross (pointing left)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -481,7 +481,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3a", {
 })
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3a_right", {
-	description = "R10-3a: Pedestrians, push button to cross (pointing right)",
+	description = S("R10-3a: Pedestrians, push button to cross (pointing right)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -496,7 +496,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3a_right
 })
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3a_both_ways", {
-	description = "R10-3a: Pedestrians, push button to cross (pointing both ways)",
+	description = S("R10-3a: Pedestrians, push button to cross (pointing both ways)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -511,7 +511,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3a_both_
 })
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3e", {
-	description = "R10-3e: Pedestrians, push button to cross (pointing right)",
+	description = S("R10-3e: Pedestrians, push button to cross (pointing right)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -526,7 +526,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3e", {
 })
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3e_left", {
-	description = "R10-3e: Pedestrians, push button to cross (pointing left)",
+	description = S("R10-3e: Pedestrians, push button to cross (pointing left)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -541,7 +541,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3e_left"
 })
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3i", {
-	description = "R10-3i: Pedestrians, push button to cross (pointing right, with street name)",
+	description = S("R10-3i: Pedestrians, push button to cross (pointing right, with street name)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -569,7 +569,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3i", {
 })
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3i_left", {
-	description = "R10-3i: Pedestrians, push button to cross (pointing left, with street name)",
+	description = S("R10-3i: Pedestrians, push button to cross (pointing left, with street name)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x15_wall.obj",
 	tiles = {
@@ -599,7 +599,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_cross_r10_3i_left"
 cbox = signs_lib.make_selection_boxes(30, 36)
 
 signs_lib.register_sign("street_signs:sign_left_on_green_arrow_only", {
-	description = "R10-5: Left on green arrow only sign",
+	description = S("R10-5: Left on green arrow only sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -616,7 +616,7 @@ signs_lib.register_sign("street_signs:sign_left_on_green_arrow_only", {
 cbox = signs_lib.make_selection_boxes(24, 36)
 
 signs_lib.register_sign("street_signs:sign_stop_here_on_red", {
-	description = "R10-6: Stop here on red sign",
+	description = S("R10-6: Stop here on red sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x36_wall.obj",
 	tiles = {
@@ -633,7 +633,7 @@ signs_lib.register_sign("street_signs:sign_stop_here_on_red", {
 cbox = signs_lib.make_selection_boxes(36, 42)
 
 signs_lib.register_sign("street_signs:sign_use_lane_with_green_arrow", {
-	description = "R10-8: Use lane with green arrow",
+	description = S("R10-8: Use lane with green arrow"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x42_wall.obj",
 	tiles = {
@@ -650,7 +650,7 @@ signs_lib.register_sign("street_signs:sign_use_lane_with_green_arrow", {
 cbox = signs_lib.make_selection_boxes(36, 48)
 
 signs_lib.register_sign("street_signs:sign_no_turn_on_red_light", {
-	description = "R10-11: No turn on red light",
+	description = S("R10-11: No turn on red light"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x48_wall.obj",
 	tiles = {
@@ -667,7 +667,7 @@ signs_lib.register_sign("street_signs:sign_no_turn_on_red_light", {
 cbox = signs_lib.make_selection_boxes(30, 36)
 
 signs_lib.register_sign("street_signs:sign_left_turn_yield_on_green_light", {
-	description = "R10-12: Left turn yield on green light",
+	description = S("R10-12: Left turn yield on green light"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_30x36_wall.obj",
 	tiles = {
@@ -684,7 +684,7 @@ signs_lib.register_sign("street_signs:sign_left_turn_yield_on_green_light", {
 cbox = signs_lib.make_selection_boxes(24, 30)
 
 signs_lib.register_sign("street_signs:sign_crosswalk_stop_on_red_light", {
-	description = "R10-23: Crosswalk: stop on red light",
+	description = S("R10-23: Crosswalk: stop on red light"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x30_wall.obj",
 	tiles = {
@@ -701,7 +701,7 @@ signs_lib.register_sign("street_signs:sign_crosswalk_stop_on_red_light", {
 cbox = signs_lib.make_selection_boxes(9, 12, nil, 0, 0, -1.25)
 
 signs_lib.register_sign("street_signs:sign_ped_push_button_to_turn_on_warning_lights", {
-	description = "R10-25: Pedestrians, push button to turn on warning lights",
+	description = S("R10-25: Pedestrians, push button to turn on warning lights"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_9x12_wall.obj",
 	tiles = {
@@ -718,7 +718,7 @@ signs_lib.register_sign("street_signs:sign_ped_push_button_to_turn_on_warning_li
 cbox = signs_lib.make_selection_boxes(41, 41)
 
 signs_lib.register_sign("street_signs:sign_rr_grade_crossbuck", {
-	description = "R15-1: Railroad grade crossing (crossbuck)",
+	description = S("R15-1: Railroad grade crossing (crossbuck)"),
 	selection_box = cbox,
 	mesh = "street_signs_rr_grade_crossbuck_wall.obj",
 	tiles = {
@@ -735,7 +735,7 @@ signs_lib.register_sign("street_signs:sign_rr_grade_crossbuck", {
 cbox = signs_lib.make_selection_boxes(24, 12, nil, 0, 12, 0)
 
 signs_lib.register_sign("street_signs:sign_rr_exempt_r15_3p", {
-	description = "R15-3P: Railroad \"EXEMPT\" sign (white)",
+	description = S("R15-3P: Railroad \"EXEMPT\" sign (white)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_24x12_top_wall.obj",
 	tiles = {
@@ -754,7 +754,7 @@ cbox = {
 }
 
 signs_lib.register_sign("street_signs:sign_stop_for_ped", {
-	description = "R1-6a: Stop for pedestrian in crosswalk sign",
+	description = S("R1-6a: Stop for pedestrian in crosswalk sign"),
 	paramtype2 = "facedir",
 	selection_box = cbox,
 	mesh = "street_signs_stop_for_ped.obj",

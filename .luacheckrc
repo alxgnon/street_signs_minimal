@@ -14,5 +14,5 @@ read_globals = {
 	"minetest",
 
 	-- mods
-	"default", "signs_lib", "screwdriver", "intllib"
+	"default", "signs_lib", "screwdriver"
 }

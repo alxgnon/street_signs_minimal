@@ -1,8 +1,9 @@
 -- Misc./Generic signs
+local S = street_signs.S
 local cbox = signs_lib.make_selection_boxes(36, 36)
 
 signs_lib.register_sign("street_signs:sign_warning_3_line", {
-	description = "W3-4: Generic US diamond \"warning\" sign (3-line, yellow)",
+	description = S("W3-4: Generic US diamond \"warning\" sign (3-line, yellow)"),
 	selection_box = cbox,
 	mesh = "street_signs_warning_36x36_wall.obj",
 	tiles = {
@@ -32,7 +33,7 @@ signs_lib.register_sign("street_signs:sign_warning_3_line", {
 
 
 signs_lib.register_sign("street_signs:sign_warning_4_line", {
-	description = "W23-2: Generic US diamond \"warning\" sign (4-line, yellow)",
+	description = S("W23-2: Generic US diamond \"warning\" sign (4-line, yellow)"),
 	selection_box = cbox,
 	mesh = "street_signs_warning_36x36_wall.obj",
 	tiles = {
@@ -61,7 +62,7 @@ signs_lib.register_sign("street_signs:sign_warning_4_line", {
 })
 
 signs_lib.register_sign("street_signs:sign_warning_orange_3_line", {
-	description = "W3-4: Generic US diamond \"warning\" sign (3-line, orange)",
+	description = S("W3-4: Generic US diamond \"warning\" sign (3-line, orange)"),
 	selection_box = cbox,
 	mesh = "street_signs_warning_36x36_wall.obj",
 	tiles = {
@@ -90,7 +91,7 @@ signs_lib.register_sign("street_signs:sign_warning_orange_3_line", {
 })
 
 signs_lib.register_sign("street_signs:sign_warning_orange_4_line", {
-	description = "W23-2: Generic US diamond \"warning\" sign (4-line, orange)",
+	description = S("W23-2: Generic US diamond \"warning\" sign (4-line, orange)"),
 	selection_box = cbox,
 	mesh = "street_signs_warning_36x36_wall.obj",
 	tiles = {
@@ -132,7 +133,7 @@ for _, s in ipairs(street_signs.big_sign_sizes) do
 		local defc = c[2]
 
 		signs_lib.register_sign("street_signs:sign_highway_"..size.."_"..color, {
-			description = "Generic highway sign ("..nlines.."-line, "..size..", "..color..")",
+			description = S("Generic highway sign (@1-line, @2, @3)", nlines, size, color),
 			inventory_image = "street_signs_generic_highway_"..size.."_"..color.."_inv.png",
 			selection_box = {
 				type = "wallmounted",

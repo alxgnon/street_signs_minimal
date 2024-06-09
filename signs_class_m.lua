@@ -1,11 +1,12 @@
 -- Class-M signs
+local S = street_signs.S
 local cbox = signs_lib.make_selection_boxes(36, 36)
 
 local sgroups = table.copy(signs_lib.standard_steel_groups)
 sgroups.not_in_creative_inventory = 1
 
 signs_lib.register_sign("street_signs:sign_us_route", {
-	description = "M1-4: Generic \"US Route\" sign",
+	description = S("M1-4: Generic \"US Route\" sign"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_36x36_wall.obj",
 	tiles = {
@@ -33,7 +34,7 @@ signs_lib.register_sign("street_signs:sign_us_route", {
 })
 
 signs_lib.register_sign("street_signs:sign_us_interstate", {
-	description = "M1-1: Generic US Interstate sign",
+	description = S("M1-1: Generic US Interstate sign"),
 	selection_box = cbox,
 	mesh = "street_signs_interstate_shield_wall.obj",
 	tiles = {
@@ -64,7 +65,7 @@ signs_lib.register_sign("street_signs:sign_us_interstate", {
 cbox = signs_lib.make_selection_boxes(48, 18)
 
 signs_lib.register_sign("street_signs:sign_detour_right_m4_10", {
-	description = "M4-10: Detour sign (to right)",
+	description = S("M4-10: Detour sign (to right)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_48x18_wall.obj",
 	tiles = {
@@ -79,7 +80,7 @@ signs_lib.register_sign("street_signs:sign_detour_right_m4_10", {
 })
 
 signs_lib.register_sign("street_signs:sign_detour_left_m4_10", {
-	description = "M4-10: Detour sign (to left)",
+	description = S("M4-10: Detour sign (to left)"),
 	selection_box = cbox,
 	mesh = "street_signs_generic_sign_48x18_wall.obj",
 	tiles = {

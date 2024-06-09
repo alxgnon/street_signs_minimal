@@ -5,13 +5,12 @@
 -- yield, US Route, and so on (all from MUTCD 2009 R2)
 --
 -- forked from signs_lib by Diego Martinez et. al
+local modname = minetest.get_current_modname()
 
 street_signs = {}
-street_signs.path = minetest.get_modpath(minetest.get_current_modname())
-
--- Load support for intllib.
-local S = dofile(street_signs.path .. "/intllib.lua")
+street_signs.path = minetest.get_modpath(modname)
 street_signs.lbm_restore_nodes = {}
+street_signs.S = minetest.get_translator(modname)
 
 street_signs.big_sign_sizes = {
 --    "size",   lines, chars, hscale, vscale, xoffs, yoffs, box
@@ -52,5 +51,5 @@ minetest.register_lbm({
 
 
 if minetest.settings:get("log_mods") then
-	minetest.log("action", S("[MOD] Street signs loaded"))
+	minetest.log("action", "[MOD] Street signs loaded")
 end
