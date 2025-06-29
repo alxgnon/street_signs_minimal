@@ -16,7 +16,7 @@ dofile(street_signs.path.."/signs_class_d.lua")
 
 minetest.register_lbm({
 	nodenames = street_signs.lbm_restore_nodes,
-	name = "street_signs:restore_sign_text",
+	name = "street_signs_minimal:restore_sign_text",
 	label = "Restore sign text",
 	run_at_every_load = true,
 	action = function(pos)
