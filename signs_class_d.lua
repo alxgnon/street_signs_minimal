@@ -36,7 +36,7 @@ local function disable_apn()
 	return
 end
 
-signs_lib.register_sign("street_signs:sign_basic", {
+signs_lib.register_sign("street_signs_minimal:sign_basic", {
 	description = S("Street sign"),
 	paramtype2 = "facedir",
 	selection_box = cbox,
@@ -61,3 +61,5 @@ signs_lib.register_sign("street_signs:sign_basic", {
 	after_place_node = disable_apn,
 	on_rotate = rotate
 })
+
+minetest.register_alias("street_signs:sign_basic", "street_signs_minimal:sign_basic")
